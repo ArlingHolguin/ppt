@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel y Tijera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/piedra.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Piedra Papel y Tijera</h1>
+    </header>
+    <div class="score-board">
+        <div id="user-label" class="badge">Usuario</div>
+        <div id="computer-label" class="badge">Máquina</div>
+        <span id="user-score">0</span>:
+        <span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Piedra papel y tijera. Ganador !</p>
+    </div>
+    <div class="choices">
+        <div class="choice hvr-bounce-in" id="r">
+            <img src="images/piedra.png" alt="piedra">
+        </div>
+        <div class="choice hvr-bounce-in" id="p">
+            <img src="images/papel.png" alt="papel">
+        </div>
+        <div class="choice hvr-bounce-in" id="s">
+            <img src="images/tijera.png" alt="tijera">
+        </div>
+    </div>
+
+    <p id="action-message">Haga click en alguna opción para jugar con la máquina.</p>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #23232f;
+    font-family: 'Asap', sans-serif;
+}
+
+header {
+    background: #fff;
+    padding: 20px;
+}
+
+header>h1 {
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    font-size: 40px;
+    padding: 15px 20px;
+    font-family: 'Asap', sans-serif;
+    position: relative;
+}
+
+.badge {
+    background-color: #E2584D;
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-family: 'Asap', cursive;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -35px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -35px;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.result>p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Asap', cursive;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choice {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #31314e;
+}
+
+#action-message {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.green-glow {
+    border: 4px solid #00ff00;
+    box-shadow: 0 0 10px rgba(85, 226, 120, 0.2);
+}
+
+.red-glow {
+    border: 4px solid #cf4c4c;
+    box-shadow: 0 0 10px rgba(128, 62, 62, 0.2);
+}
+
+.gray-glow {
+    border: 4px solid #505050;
+    box-shadow: 0 0 10px rgba(216, 50, 50, 0.2);
+}
+
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    z-index: 999;
+}
+
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
